@@ -1,25 +1,33 @@
 {
   "nav": {
-    "logo": "Bentolio",
+    "logo": "Meshal Almutairi",
     "links": [
       {
-        "title": "Buy Next.js template",
-        "url": "https://rauftech.lemonsqueezy.com/buy/43d4f6ca-c525-497f-a77a-8148150335dc"
+        "title": "Home",
+        "url": "/"
+      },
+      {
+        "title": "Work",
+        "url": "/work"
+      },
+      {
+        "title": "Resume",
+        "url": "/Meshal_Almutairi_Resume.pdf"
       }
     ]
   },
 
   "intro": {
-    "heading": "Let’s create dance floor <span class='italic'> magic</span> for your special day",
+    "heading": "Hi, it's <span class='italic text-accent'>Meshal</span>. <br> A Computer & Software Engineer.",
     "icon": "/icons/intro-icon.svg"
   },
-   
+
   "portrait": {
-    "image": "/portrait.png"
+    "image": "/pluto.webp"
   },
 
   "about": {
-    "text": "DJ Lisa is a passionate wedding DJ, acclaimed for blending diverse musical genres with expert crowd-reading skills. Based in Florida, she crafts personalized soundtracks that turn every wedding into an unforgettable celebration.",
+    "text": "I'm a Computer & Software Engineer with full-stack expertise in developing high-performance applications. Dedicated to transforming complex problems into streamlined solutions with a focus on efficiency and scalability.",
     "icon": "/icons/about-icon.svg"
   },
 
@@ -27,57 +35,61 @@
     "label": "Have some questions?",
     "heading": "Contact <span class='italic'>me</span>",
     "linkIcon": "/icons/arrow-icon.svg",
-    "email": "hello@rauftech.com"
+    "email": "hello@meshalmutairi.com"
   },
 
   "work": {
     "projects": [
       {
-        "title": "First Dance",
-        "url": "",
-        "media": "/work.png"
+        "title": "Aurora Capital",
+        "url": "https://github.com/mshll/aurora-capital",
+        "live": "https://aurora-capital.mshl.me",
+        "media": "/aurora-capital.webp"
       },
       {
-        "title": "Cocktail Hour",
-        "url": "",
-        "media": "/work.png"
-
+        "title": "Flip n' Find",
+        "url": "https://github.com/mshll/flip-n-find",
+        "live": "https://flip-n-find.mshl.me",
+        "media": "/flipnfind.webp"
       },
       {
-        "title": "Dinner Music",
-        "url": "",
-        "media": "/work.png"
-
+        "title": "Smart Vent",
+        "url": "https://github.com/mshll/SmartVent",
+        "media": "/smartvent.webp"
       },
       {
-        "title": "After Party",
-        "url": "",
-        "media": "/work.png"
-
+        "title": "DDR5 Memory Controller Scheduler",
+        "url": "https://github.com/mshll/DDR5-Memory-Controller-Scheduler",
+        "media": "/github.png"
       },
       {
-        "title": "Last Dance",
-        "url": "",
-        "media": "/work.png"
+        "title": "MIPS Lite Pipeline Simulator",
+        "url": "https://github.com/mshll/MIPS-Lite-Simulator",
+        "media": "/github.png"
+      },
+      {
+        "title": "Rusty Hitman",
+        "url": "https://github.com/mshll/rusty-hitman",
+        "live": "https://rusty-hitman.mshl.me",
+        "media": "/rustyhitman.webp"
       }
     ],
-    "linkIcon": "/icons/arrow-icon-black.svg"  
+    "linkIcon": "/icons/arrow-icon-black.svg"
   },
 
- 
   "socials": {
     "links": [
       {
-        "title": "Figma",
-        "url": "https://www.figma.com/@lilcoderman"
-      },
-      {
-        "title": "Instagram",
-        "url": "https://www.instagram.com/lilcoderman/"
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/meshal-almutairi/"
       },
       {
         "title": "Github",
-        "url": "https://github.com/abdulrauf11"
+        "url": "https://github.com/mshll/"
+      },
+      {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/meshal.png/"
       }
     ]
   }

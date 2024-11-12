@@ -1,7 +1,8 @@
-import Image from 'next/image';
-import { useArrowAnimation, useDropdownAnimation } from '@/hooks/useAnimation';
-import Box from './Box';
 import { BLUR_DATA_URL } from '@/config';
+import { useArrowAnimation, useDropdownAnimation } from '@/hooks/useAnimation';
+import { LinkIcon } from 'lucide-react';
+import Image from 'next/image';
+import Box from './Box';
 
 export default function Work({ data, timeline }) {
   const { containerRef, handleClick } = useDropdownAnimation();
@@ -66,28 +67,42 @@ const ProjectItem = ({
         ref={containerRef}
       >
         {/* Title */}
-        <h3 className='overflow-hidden font-heading text-2xl font-normal leading-[100%]'>
+        <h3 className='overflow-hidden text-start font-heading text-2xl font-normal leading-[100%]'>
           <span className='work-heading block pb-[2px]'>{project?.title}</span>
         </h3>
         {/* Arrow Link */}
-        <a
-          href={project?.url}
-          target='_blank'
-          rel='noopener noreferrer'
-          className={'pointer-events-auto inline-block px-2'}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
+        <div
+          className={`${index === 0 ? 'opacity-1' : 'opacity-0'} arrow-container flex items-baseline gap-3`}
         >
-          {linkIcon && (
-            <Image
-              src={linkIcon}
-              width={16}
-              height={16}
-              alt='arrow'
-              className={`${index === 0 ? 'opacity-1' : 'opacity-0'} arrow size-[0.9rem]`}
-            />
-          )}
-        </a>
+          <a
+            href={project?.live}
+            target='_blank'
+            rel='noopener noreferrer'
+            className={'pointer-events-auto inline-block px-2'}
+          >
+            {project?.live && (
+              <LinkIcon size={16} className='size-[1rem] text-accent' />
+            )}
+          </a>
+          <a
+            href={project?.url}
+            target='_blank'
+            rel='noopener noreferrer'
+            className={'pointer-events-auto inline-block px-2'}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            {linkIcon && (
+              <Image
+                src={linkIcon}
+                width={16}
+                height={16}
+                alt='arrow'
+                className={`arrow size-[0.9rem]`}
+              />
+            )}
+          </a>
+        </div>
       </div>
 
       {/* Thumbnail */}

@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   /* global styles */
   *::selection {
@@ -14,13 +13,13 @@
   }
 
   body {
-    @apply bg-background font-body font-light overscroll-y-none;
+    @apply overscroll-y-none bg-background font-body font-light;
   }
 }
 
 @layer components {
   .box {
-    @apply size-full bg-primary text-text rounded-[16px] p-6 overflow-hidden;
+    @apply size-full overflow-hidden rounded-[16px] border border-secondary bg-primary p-6 text-text;
   }
 }
 
@@ -30,14 +29,32 @@
   }
 
   .absolute-center {
-    @apply fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+    @apply fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform;
   }
 
   .hide-scrollbar {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-      scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
   }
-  .hide-scrollbar::-webkit-scrollbar { 
-      display: none;  /* Safari and Chrome */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
   }
+}
+
+/* General selection styling */
+::selection {
+  background: #0d47a1; /* Background color when text is selected */
+  color: #000; /* Text color when selected */
+}
+
+/* For Mozilla Firefox */
+::-moz-selection {
+  background: #0d47a1;
+  color: #000;
+}
+
+/* For WebKit browsers (Chrome, Safari, newer versions of Edge) */
+::-webkit-selection {
+  background: #0d47a1;
+  color: #000;
 }

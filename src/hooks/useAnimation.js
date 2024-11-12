@@ -1,8 +1,8 @@
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import { useRef, useState } from 'react';
-import { Flip } from 'gsap/Flip';
 import { DISABLE_LOADING_ANIMATION } from '@/config';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { Flip } from 'gsap/Flip';
+import { useRef, useState } from 'react';
 
 export const useGlobalTimeline = loaded => {
   const [tl, setTl] = useState();
@@ -153,7 +153,7 @@ export const useBoxAnimation = (
 export const useDropdownAnimation = (
   buttonSelector = '.button',
   thumbnailSelector = '.thumbnail',
-  arrowSelector = '.arrow'
+  arrowSelector = '.arrow-container'
 ) => {
   const containerRef = useRef();
   const { contextSafe } = useGSAP({ scope: containerRef });

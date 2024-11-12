@@ -1,11 +1,10 @@
-import { DM_Sans, DM_Serif_Display } from 'next/font/google';
 import Global from '@/components/Global';
+import { DM_Sans, DM_Serif_Display } from 'next/font/google';
 import './globals.css';
 
 export const metadata = {
-  title: 'Bentolio',
-  description:
-    'Bentolio is a clean and customizable portfolio template built on Bento Grids, perfect for showcasing your work.',
+  title: 'Meshal Almutairi',
+  description: 'Computer & Software Engineer.',
 };
 
 const fontHeading = DM_Serif_Display({

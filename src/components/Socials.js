@@ -22,7 +22,7 @@ export default function Socials({ data, timeline }) {
             href={link.url}
             target='_blank'
             rel='noopener noreferrer'
-            className='flex overflow-hidden text-base font-medium uppercase leading-[100%]'
+            className='flex overflow-hidden text-base font-medium uppercase leading-[100%] text-muted transition-colors duration-300 hover:text-text'
           >
             <span className='social-link inline-block'>{link.title}</span>
           </a>

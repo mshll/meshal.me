@@ -26,7 +26,7 @@ export default function Nav({ data, timeline }) {
               rel='noopener noreferrer'
               className='inline-block'
             >
-              <button className='rounded-xl border border-secondary bg-secondary px-4 py-3 pt-3.5 font-medium uppercase text-primary'>
+              <button className='hover:text-muted rounded-xl px-4 py-3 pt-3.5 font-medium uppercase text-text transition-colors duration-300'>
                 {link.title}
               </button>
             </a>

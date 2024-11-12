@@ -10,12 +10,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#D8CFBC',
-        secondary: '#565449',
-
-        text: '#11120D',
-        background: '#11120D',
+        primary: '#0E0E10',
+        secondary: '#1B1B1B',
+        accent: '#0D47A1',
+        text: '#E5E5E5',
+        muted: '#71717A',
+        background: '#050505',
       },
+      // LIGHT THEME
+      // colors: {
+      //   primary: '#F9F9F9',
+      //   secondary: '#E5E5E5',
+      //   accent: '#0D47A1',
+      //   text: '#101010',
+      //   muted: '#A0A0A0',
+      //   background: '#F2F2F2',
+      // },
 
       fontFamily: {
         heading: ['var(--font-heading)', 'serif'],

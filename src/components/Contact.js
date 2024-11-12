@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import { useArrowAnimation } from '@/hooks/useAnimation';
+import Image from 'next/image';
 import Box from './Box';
 
 export default function Contact({ data, timeline }) {
@@ -24,7 +24,7 @@ export default function Contact({ data, timeline }) {
   return (
     <Box
       timeline={timeline}
-      className='-translate-y-full scale-0 bg-secondary text-primary opacity-0'
+      className='-translate-y-full scale-0 text-accent opacity-0'
       callbackAnimation={contentAnimation}
     >
       <div className='size-full'>
@@ -38,7 +38,7 @@ export default function Contact({ data, timeline }) {
           onMouseLeave={handleMouseLeave}
         >
           <div className='contact-bar flex items-center justify-between'>
-            <p className='max-w-[10ch] text-base leading-[120%]'>
+            <p className='max-w-[10ch] text-base leading-[120%] text-text'>
               {data?.label}
             </p>
 
