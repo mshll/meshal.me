@@ -1,3 +1,4 @@
+import { ArrowUpRight } from 'lucide-react';
 import Box from './Box';
 
 export default function Nav({ data, timeline }) {
@@ -17,7 +18,7 @@ export default function Nav({ data, timeline }) {
         <div className='logo overflow-hidden font-heading text-2xl font-normal'>
           <span className='block'>{data?.logo}</span>
         </div>
-        <div className='cta flex items-center gap-4'>
+        <div className='cta flex flex-wrap items-center justify-center gap-4'>
           {data?.links?.map(link => (
             <a
               key={link.title}
@@ -26,8 +27,17 @@ export default function Nav({ data, timeline }) {
               rel='noopener noreferrer'
               className='inline-block'
             >
-              <button className='hover:text-muted rounded-xl px-4 py-3 pt-3.5 font-medium uppercase text-text transition-colors duration-300'>
+              <button
+                className={`flex items-center justify-center rounded-xl px-4 py-3 pt-3.5 font-medium uppercase text-text transition-colors duration-300 ${
+                  link.title.toLowerCase() === 'resume'
+                    ? 'bg-secondary hover:bg-accent'
+                    : 'hover:text-muted'
+                }`}
+              >
                 {link.title}
+                {link.title.toLowerCase() === 'resume' && (
+                  <ArrowUpRight className='ml-1 inline-block h-4 w-4' />
+                )}
               </button>
             </a>
           ))}

@@ -3,12 +3,16 @@
     "logo": "Meshal Almutairi",
     "links": [
       {
-        "title": "Home",
-        "url": "/"
+        "title": "Github",
+        "url": "https://github.com/mshll/"
       },
       {
-        "title": "Work",
-        "url": "/work"
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/meshal-almutairi/"
+      },
+      {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/meshal.png/"
       },
       {
         "title": "Resume",
@@ -80,12 +84,12 @@
   "socials": {
     "links": [
       {
-        "title": "LinkedIn",
-        "url": "https://www.linkedin.com/in/meshal-almutairi/"
-      },
-      {
         "title": "Github",
         "url": "https://github.com/mshll/"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/meshal-almutairi/"
       },
       {
         "title": "Instagram",

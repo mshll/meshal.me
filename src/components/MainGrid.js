@@ -1,16 +1,15 @@
 'use client';
 
-import { useState } from 'react';
 import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Intro from '@/components/Intro';
+import LoadingBar from '@/components/LoadingBar';
 import Nav from '@/components/Nav';
 import Portrait from '@/components/Portrait';
-import Socials from '@/components/Socials';
 import Work from '@/components/Work';
-import { useGlobalTimeline } from '@/hooks/useAnimation';
-import LoadingBar from '@/components/LoadingBar';
 import { DISABLE_LOADING_ANIMATION } from '@/config';
+import { useGlobalTimeline } from '@/hooks/useAnimation';
+import { useState } from 'react';
 
 export default function MainGrid({ data = {} }) {
   const [loaded, setLoaded] = useState(DISABLE_LOADING_ANIMATION);
@@ -49,7 +48,7 @@ export default function MainGrid({ data = {} }) {
 
         {/* Right column */}
         <div className='col-span-4 row-span-9 grid grid-cols-subgrid grid-rows-subgrid max-lg:col-span-full max-lg:grid-rows-none max-lg:gap-4'>
-          <div className='col-span-4 row-span-8 max-lg:col-span-full'>
+          <div className='col-span-4 row-span-9 max-lg:col-span-full'>
             <Work data={data?.work} timeline={tl} />
           </div>
 
@@ -57,9 +56,9 @@ export default function MainGrid({ data = {} }) {
             <Contact data={data?.contact} timeline={tl} />
           </div>
 
-          <div className='col-span-4 row-span-1 max-lg:col-span-full max-lg:min-h-[5rem]'>
+          {/* <div className='col-span-4 row-span-1 max-lg:col-span-full max-lg:min-h-[5rem]'>
             <Socials data={data?.socials} timeline={tl} />
-          </div>
+          </div> */}
         </div>
       </div>
     </>
